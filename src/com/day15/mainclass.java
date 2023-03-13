@@ -1,9 +1,15 @@
 package com.day15;
 
-public class mainclass {
+public class Mainclass {
 
 	public static void main(String[] args) {
-            System.out.println("welcome to bonory program");
+		BinarySearchTree tree = new BinarySearchTree();
+		Node root = null;
+		root = tree.insertData(root, 56);
+		root = tree.insertData(root, 30);
+		root = tree.insertData(root, 70);
+
+		tree.printInOrder(root);
             
 
 	}
